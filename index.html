@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="VITA-ICE, es krim fungsional dari panen lokal untuk kesehatan yang lebih baik.">
+  <title>VITA-ICE | Local Harvest, Better Health</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="VITA-ICE home"><span>VITA</span><b>-ICE</b></a>
+      <p class="top-note">FROZEN FUNCTIONAL FOOD</p>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <h1>Local Harvest,<br><em>Better Health</em></h1>
+          <p class="hero-text">Es krim fungsional berbahan hasil bumi lokal. Setiap scoop dirancang untuk membawa manfaat baik, dalam rasa yang ingin kamu ulangi.</p>
+          <a class="scroll-link" href="#collection"><span>↓</span> Explore the collection</a>
+        </div>
+        <div class="hero-art" aria-label="Sepuluh produk VITA-ICE tersusun melingkar">
+          <div class="hero-wheel">
+            <div class="hero-wheel-center"><strong>VITA</strong><span>-ICE</span></div>
+            <img class="hero-product product-1" src="1.png" alt="VITA-IRON">
+            <img class="hero-product product-2" src="2.png" alt="VITA-HEART">
+            <img class="hero-product product-3" src="3.png" alt="VITA-BALANCE">
+            <img class="hero-product product-4" src="4.png" alt="VITA-GUT">
+            <img class="hero-product product-5" src="5.png" alt="VITA-ANTIOX">
+            <img class="hero-product product-6" src="6.png" alt="VITA-IMMUNE">
+            <img class="hero-product product-7" src="7.png" alt="VITABONE">
+            <img class="hero-product product-8" src="8.png" alt="VITA-GROWTH">
+            <img class="hero-product product-9" src="9.png" alt="VITABEET">
+            <img class="hero-product product-10" src="10.png" alt="VITA-BRAIN">
+          </div>
+        </div>
+      </section>
+
+      <section class="collection" id="collection">
+        <div class="section-heading"><div><h2>The VITA<br><em>collection</em></h2></div></div>
+        <div class="product-grid" id="productGrid"></div>
+      </section>
+
+    </main>
+
+    <footer><a class="brand" href="#top"><span>VITA</span><b>-ICE</b></a><p>Local Harvest, Better Health</p><p class="footer-code">Sinaran Rafflesia</p></footer>
+  </div>
+
+  <div class="modal" id="productModal" aria-hidden="true"><div class="modal-backdrop" data-close></div><article class="modal-card"><button class="close-button" type="button" data-close aria-label="Tutup detail">×</button><div class="modal-image"><img id="modalImage" src="" alt=""></div><div class="modal-content"><p class="eyebrow" id="modalCategory"></p><h2 id="modalName"></h2><p class="modal-benefit" id="modalBenefit"></p><div class="nutrition-title"><span>Nutrition snapshot</span><span>per serving</span></div><div class="nutrition-grid" id="nutritionGrid"></div><div class="ingredient-line"><strong>Hero ingredient</strong><span id="modalIngredient"></span></div></div></article></div>
+  <script src="script.js"></script>
+</body>
+</html>
